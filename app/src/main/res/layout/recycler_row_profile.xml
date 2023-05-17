@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="10dp"
+    android:background="#C5EDFF"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/userBarId"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:background="#6CD0FD"
+        android:gravity="left"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/recyclerUserImage"
+            android:layout_width="69dp"
+            android:layout_height="62dp"
+            app:civ_border_color="@android:color/white"
+            app:civ_border_width="1dp"
+            android:foregroundGravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="11dp"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/usericonwhite" />
+
+        <TextView
+            android:id="@+id/recyclerUsernameText"
+            android:layout_width="185dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="122dp"
+            android:layout_marginBottom="26dp"
+            android:text="Username"
+            android:textColor="#1B0C0C"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/recyclerUserImage"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/recyclerImageView"
+        android:layout_width="match_parent"
+        android:layout_height="345dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="82dp"></ImageView>
+
+
+
+    <TextView
+        android:id="@+id/recyclerCommentText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Coment"
+
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="345dp"></TextView>
+
+</LinearLayout>
